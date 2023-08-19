@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: 'Poppins , sans-serif'
+                    },
+                    boxShadow: {
+                        custom: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="bg-[#512b81]">
+        <nav class="md:w-3/4 mx-auto  py-[7px] px-[20px] flex justify-between items-center">
+            <div class="logo font-poppins text-white text-[25px] font-[600]">Personal Blogging App</div>
+            <div><a href="./login.html"><button
+                        class="login-signup font-poppins text-[#512b81] bg-white text-[18px] font-[600] py-[5px] px-[20px] rounded-full cursor-pointer">Login</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main border-b-[3px] border-solid border-[#000000] py-[30px] px-[20px] bg-white">
+        <div class="in-main md:w-3/4 mx-auto">
+            <h1 class="font-poppins font-[600] text-[50px]">SignUp</h1>
+        </div>
+    </section>
+
+    <section class="form-section bg-[#f8f9fa] md:p-0 px-[20px] h-[calc(100vh-200px)]">
+        <div class="in-form md:w-3/4 mx-auto py-[50px]">
+            <form action="#"
+                class="h-full md:w-[600px] w-[100%] mx-auto flex flex-col gap-[20px] rounded-2xl shadow-custom py-[80px] bg-white">
+                <div id="error" class="text-[red] font-poppins font-[500] text-center text-[18px]"></div>
+                <input type="text" placeholder="First Name" required id="Fname"
+                    class="border-2 border-solid w-[90%] md:w-[65%] mx-auto font-poppins py-[10px] px-[15px] rounded-md outline-2 outline-[#512b81] ">
+                <input type="text" placeholder="Last Name" required id="Lname"
+                    class="border-2 border-solid w-[90%] md:w-[65%] mx-auto font-poppins py-[10px] px-[15px] rounded-md outline-2 outline-[#512b81] ">
+                <input type="email" placeholder="Email" required id="email"
+                    class="border-2 border-solid w-[90%] md:w-[65%] mx-auto font-poppins py-[10px] px-[15px] rounded-md outline-2 outline-[#512b81] ">
+                <input type="password" placeholder="Password" required id="password"
+                    class="border-2 border-solid w-[90%] md:w-[65%] mx-auto font-poppins py-[10px] px-[15px] rounded-md outline-2 outline-[#512b81] ">
+                <input type="password" placeholder="Confirm Password" required id="cpassword"
+                    class="border-2 border-solid w-[90%] md:w-[65%] mx-auto font-poppins py-[10px] px-[15px] rounded-md outline-2 outline-[#512b81] ">
+                <button type="submit"
+                    class="bg-[#512b81] text-white font-poppins font-[500] w-max px-[25px] py-[10px] mx-auto rounded-lg mt-[30px]" id="signup">Signup</button>
+            </form>
+            <script type="module" src="./signup.js"></script>
+        </div>
+    </section>
+
+</body>
+
+</html>

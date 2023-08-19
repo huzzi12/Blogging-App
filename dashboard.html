@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: 'Poppins , sans-serif'
+                    },
+                    boxShadow: {
+                        custom: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="bg-[#512b81]">
+        <nav class="md:w-3/4 mx-auto  py-[7px] px-[20px] flex justify-between items-center">
+            <div class="logo font-poppins text-white text-[25px] font-[600]">Personal Blogging App</div>
+            <div class="flex gap-[30px] items-center"><span class="text-white font-poppins">"name of user"</span>
+                <button id="logout"
+                    class="login-signup font-poppins text-[#512b81] bg-white text-[18px] font-[600] py-[5px] px-[20px] rounded-full cursor-pointer">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main border-b-[3px] border-solid border-[#000000] py-[30px] px-[20px] bg-white">
+        <div class="in-main md:w-3/4 mx-auto">
+            <h1 class="font-poppins font-[600] text-[50px]">Dashboard</h1>
+        </div>
+    </section>
+
+    <section id="main" class="bg-[#f8f9fa] py-[50px]">
+        <section class="form-section ">
+            <div class="in-form h-full md:w-3/4 mx-auto lg:py-[50px] px-[20px]">
+                <form action="#"
+                    class=" h-full mx-auto flex flex-col gap-[20px] rounded-xl shadow-custom xl:py-[80px] py-[40px] sm:px-[40px] px-[20px] xl:px-[100px] bg-white">
+                    <input type="text" placeholder="Blog Title"
+                        class="border-2 border-solid w-full mx-auto font-poppins py-[10px] px-[15px] rounded-md outline-2 outline-[#512b81] ">
+                    <textarea cols="30" rows="10" placeholder="What's in your mind"
+                        class="border-2 border-solid w-full mx-auto font-poppins py-[10px] px-[15px] rounded-md outline-2 outline-[#512b81] "></textarea>
+                    <button type="submit"
+                        class="bg-[#512b81] text-white font-poppins font-[500] w-max px-[25px] py-[10px]  rounded-lg mt-[30px]">Publish
+                        Blog</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="md:w-3/4 mx-auto h-full px-[20px]">
+                <h1 class="font-poppins font-[600] text-[32px] my-[25px] lg:mb-[25px]">My Blogs</h1>
+                <div class="bg-white rounded-xl sm:p-[30px] px-[20px] py-[30px] border border-solid mb-[50px]">
+                    <div class="flex gap-[20px] items-center ">
+                        <a href="#">
+                            <div class="bg-gray-300 h-[100px] w-[100px] sm:my-0 my-[10px] rounded-lg ">
+                                <img src="https://img.freepik.com/free-photo/handsome-business-guy-with-folder_23-2147580193.jpg?1&w=1380&t=st=1692461872~exp=1692462472~hmac=7545c9cd498a41c92845fd3fb4045b2a1ea03ccb4b3dec27875ff79f3fadffa9"
+                                    alt="" class="h-full rounded-lg">
+                            </div>
+                        </a>
+                        <div>
+                            <h1 class="font-poppins font-[600] text-[25px]">Lorem ipsum dolor sit amet. <br>Lorem ipsum dolor sit amet.</h1>
+                            <div class="font-poppins font-[500] text-[18px] text-gray-500"><span>Author name</span>
+                                -
+                                <span>Post Date</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-text font-poppins leading-7 my-[20px]">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Accusamus porro
+                        aperiam eius facilis similique, iste officiis doloremque quaerat dignissimos iure vel? Cumque
+                        nisi odit ut nihil, aliquam saepe quod officiis. Cumque libero ad, corrupti rem necessitatibus
+                        numquam harum, dicta sapiente saepe ipsa in iusto eligendi pariatur distinctio commodi sit quis,
+                        eaque iure laudantium officiis delectus modi nam. Distinctio accusantium illo rerum iure unde
+                        eum sint molestiae dicta beatae tempora reiciendis optio non libero, exercitationem architecto,
+                        repudiandae illum molestias aliquam recusandae deserunt excepturi nesciunt inventore totam. Aut
+                        ea dolores reiciendis soluta sint, adipisci iusto atque, eius id aperiam aliquam perferendis
+                        voluptatibus.
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius voluptate illo tempora nobis, aut
+                        molestiae sed temporibus nisi ratione, quidem distinctio nesciunt. Nam, neque est. Animi
+                        nesciunt molestiae perspiciatis laudantium ab repudiandae et odit, quae delectus laborum
+                        corrupti consectetur in natus debitis. Optio quam aliquam ea atque labore, qui nesciunt ducimus
+                        saepe doloremque assumenda expedita eos incidunt inventore non possimus ad unde cum aperiam?
+                        Labore aliquid, ab libero ullam quidem modi illo error odit accusantium quia sint quaerat dolor
+                        temporibus consequuntur sed numquam corporis officiis rem? Harum ad dolorem assumenda dolor
+                        sapiente architecto porro molestias cupiditate veniam cum voluptate doloribus necessitatibus
+                        quibusdam, rerum voluptas?
+                    </div>
+
+                    <div class="font-poppins text-[#512b81] font-[500] text-[18px] flex gap-[40px]">
+                        <button>Delete</button> <button>Edit</button>
+                    </div>
+                </div>
+
+
+
+                <div class="bg-white rounded-xl sm:p-[30px] px-[20px] py-[30px] border border-solid mb-[50px]">
+                    <div class="flex gap-[20px] items-center">
+                        <a href="#">
+                            <div class="bg-gray-300 h-[100px] w-[100px] sm:my-0 my-[10px] rounded-lg ">
+                                <img src="https://img.freepik.com/free-photo/handsome-business-guy-with-folder_23-2147580193.jpg?1&w=1380&t=st=1692461872~exp=1692462472~hmac=7545c9cd498a41c92845fd3fb4045b2a1ea03ccb4b3dec27875ff79f3fadffa9"
+                                    alt="" class="h-full rounded-lg">
+                            </div>
+                        </a>
+                        <div>
+                            <h1 class="font-poppins font-[600] text-[25px]">Lorem ipsum dolor sit amet. <br>Lorem ipsum dolor sit amet</h1>
+                            <div class="font-poppins font-[500] text-[18px] text-gray-500"><span>Author name</span>
+                                -
+                                <span>Post Date</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-text font-poppins leading-7 my-[20px]">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Accusamus porro
+                        aperiam eius facilis similique, iste officiis doloremque quaerat dignissimos iure vel? Cumque
+                        nisi odit ut nihil, aliquam saepe quod officiis. Cumque libero ad, corrupti rem necessitatibus
+                        numquam harum, dicta sapiente saepe ipsa in iusto eligendi pariatur distinctio commodi sit quis,
+                        eaque iure laudantium officiis delectus modi nam. Distinctio accusantium illo rerum iure unde
+                        eum sint molestiae dicta beatae tempora reiciendis optio non libero, exercitationem architecto,
+                        repudiandae illum molestias aliquam recusandae deserunt excepturi nesciunt inventore totam. Aut
+                        ea dolores reiciendis soluta sint, adipisci iusto atque, eius id aperiam aliquam perferendis
+                        voluptatibus.
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius voluptate illo tempora nobis, aut
+                        molestiae sed temporibus nisi ratione, quidem distinctio nesciunt. Nam, neque est. Animi
+                        nesciunt molestiae perspiciatis laudantium ab repudiandae et odit, quae delectus laborum
+                        corrupti consectetur in natus debitis. Optio quam aliquam ea atque labore, qui nesciunt ducimus
+                        saepe doloremque assumenda expedita eos incidunt inventore non possimus ad unde cum aperiam?
+                        Labore aliquid, ab libero ullam quidem modi illo error odit accusantium quia sint quaerat dolor
+                        temporibus consequuntur sed numquam corporis officiis rem? Harum ad dolorem assumenda dolor
+                        sapiente architecto porro molestias cupiditate veniam cum voluptate doloribus necessitatibus
+                        quibusdam, rerum voluptas?
+                    </div>
+
+                    <div class="font-poppins text-[#512b81] font-[500] text-[18px] flex gap-[40px]">
+                        <button>Delete</button> <button>Edit</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </section>
+
+    <script type="module" src="./logout.js"></script>
+
+</body>
+
+</html>
